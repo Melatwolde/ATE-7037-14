@@ -154,7 +154,7 @@
   color: var(--color-gray-100);
 }
 .search {
-  width: 73px;
+  width: auto;
   border: 0;
   outline: 0;
   font-family: var(--card-km-and-coffe-name);
@@ -194,6 +194,31 @@
   opacity: 0.6;
   gap: var(--gap-xl);
   max-width: 100%;
+  z-index: 1; /* Brings the div to the front */
+}
+.result {
+  position: relative;
+  display: inline-block;
+  min-width: 57px;
+}
+.search-results {
+  display: none;
+  position: absolute;
+  
+  top: 103px;
+  left: 720px;
+  background-color: rgba(73, 35, 93, 0.8);
+  width: 456px;
+  height: auto; /* Adjusts height based on content */
+  max-height: 473px; /* Maximum height */
+  overflow-y:hidden; /* Makes div scrollable when there are too many songs */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 18px 40px;
+  box-sizing: border-box;
+  z-index: 1; /* Brings the div to the front */
 }
 .popular-artists,
 .trending-songs-this {
@@ -369,8 +394,8 @@
   font-family: var(--card-km-and-coffe-name);
 }
 .now-playing {
-  top: 131px;
-  left: 1058px;
+  top: 151px;
+  left: 1200px;
   display: inline-block;
   min-width: 128px;
 }
@@ -607,7 +632,7 @@
   gap: 16px;
 }
 .frame-wrapper1 {
-  width: 289px;
+  width:150px;
   height: 339.4px;
   flex-direction: row;
   align-items: flex-start;
@@ -1111,33 +1136,33 @@
 .frame-wrapper2,.vector-icon5,.vector-icon6,.vector-icon7,.vector-icon8,.vector-icon9,.vector-icon10,.vector-icon11 {
   filter: invert(1);
 }
-@media screen and (max-width: 750px) {
-  .c {
+/* @media screen and (max-width: 750px) {
+  .c16 {
     font-size: var(--font-size-21xl);
   }
-  .m {
+  .m16 {
     font-size: var(--font-size-13xl);
   }
   .welcome-back-behlm {
-    font-size: 26px;
+    font-size: var(--sidebar-tiitle-size);
   }
-  .instance-parent {
+  .instance-parent2 {
     justify-content: center;
     grid-template-columns: repeat(2, minmax(211px, 365px));
   }
 }
 @media screen and (max-width: 675px) {
-  .component-parent {
+  .component-group {
     margin: 0 auto;
     grid-template-columns: repeat(2, minmax(135px, 234px));
   }
 }
 @media screen and (max-width: 450px) {
-  .c {
-    font-size: 30px;
+  .c16 {
+    font-size: var(--font-size-11xl);
   }
-  .m {
-    font-size: 24px;
+  .m16 {
+    font-size: var(--font-size-5xl);
   }
   .welcome-back-behlm {
     font-size: var(--font-size-lgi);
@@ -1147,19 +1172,19 @@
   .nice-for-what2 {
     font-size: var(--card-km-and-coffe-name-size);
   }
-  .instance-parent {
+  .instance-parent2 {
     grid-template-columns: minmax(211px, 1fr);
   }
-  .now-playing {
+  .now-playing2 {
     font-size: var(--card-km-and-coffe-name-size);
   }
   .taya,
   .taya1,
   .taya2,
   .taya3 {
-    font-size: var(--font-size-base);
+    font-size: var(--m3-title-medium-size);
   }
-  .component-parent {
+  .component-group {
     grid-template-columns: minmax(135px, 1fr);
   }
-}
+} */

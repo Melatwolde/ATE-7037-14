@@ -141,9 +141,10 @@
   font-family: var(--body-regular);
 }
 .frame-parent {
+  
   width: 91px;
   background-color: var(--color-gray-500);
-  overflow: hidden;
+  overflow: auto;
   flex-shrink: 0;
   padding: var(--padding-50xl) var(--padding-5xl) var(--padding-13xl);
   box-sizing: border-box;
@@ -352,7 +353,7 @@
 .frame-parent5 {
   align-self: stretch;
   border-radius: var(--br-xl);
-  overflow: hidden;
+  overflow: auto;
   flex-direction: column;
   padding: var(--padding-2xs) var(--padding-xl) 196px var(--padding-15xl);
   box-sizing: border-box;
@@ -401,6 +402,13 @@
   height: 46px;
   top: 6px;
   left: 10;
+  background: linear-gradient(
+    132.76deg,
+    rgba(255, 255, 255, 0.35),
+    rgba(255, 255, 255, 0.06)
+  );
+  mix-blend-mode: lighten;
+  z-index: 1;
 }
 .queue-child,
 .queue-item {
@@ -875,7 +883,7 @@
 .frame-parent1 {
   align-self: stretch;
   height: 980px;
-  overflow-y: auto;
+  overflow-y: hidden;
   flex-shrink: 0;
   flex-direction: column;
   padding: 0 0 532px;
@@ -911,4 +919,104 @@
   letter-spacing: normal;
   font-size: var(--font-size-31xl);
   font-family: var(--font-ingrid-darling); 
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  display: none;
+  cursor: pointer;
+}
+
+.icon.active {
+  display: block;
+}
+
+@media screen and (max-width: 1325px) {
+  .frame-parent {
+    padding-top: var(--padding-26xl);
+    padding-bottom: 338px;
+    box-sizing: border-box;
+  }
+  .frame-section {
+    padding-bottom: 346px;
+    box-sizing: border-box;
+  }
+  .desktop-7 {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .desktop-7-inner {
+    padding-top: var(--padding-10xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 800px) {
+  .c {
+    font-size: var(--font-size-21xl);
+  }
+  .m {
+    font-size: var(--font-size-13xl);
+  }
+  .frame-div {
+    padding-bottom: var(--padding-401xl);
+    box-sizing: border-box;
+  }
+  .frame-parent {
+    padding-top: var(--padding-10xl);
+    padding-bottom: 220px;
+    box-sizing: border-box;
+  }
+  .frame-parent3 {
+    display: none;
+  }
+  .frame-parent2 {
+    width: 606px;
+  }
+  .tyla-laura {
+    font-size: var(--font-size-21xl);
+  }
+  .frame-parent1 {
+    gap: var(--gap-base);
+  }
+  .recent-release-parent {
+    gap: var(--gap-lgi);
+  }
+  .frame-section {
+    gap: var(--gap-12xl);
+    padding-bottom: 225px;
+    box-sizing: border-box;
+  }
+  .desktop-7 {
+    gap: var(--gap-lgi);
+  }
+}
+@media screen and (max-width: 450px) {
+  .c {
+    font-size: var(--font-size-11xl);
+  }
+  .m,
+  .tyla-laura {
+    font-size: var(--font-size-5xl);
+  }
+  .truth-or-dare {
+    font-size: var(--font-size-lg);
+  }
+  .frame-parent4 {
+    gap: var(--gap-xl);
+    padding-top: var(--padding-xl);
+    padding-bottom: 127px;
+    box-sizing: border-box;
+  }
+  .recent-release {
+    font-size: var(--font-size-2xl);
+  }
+  .frame-section {
+    gap: var(--gap-base);
+  }
+  .desktop-7-inner {
+    padding-top: var(--padding-xl);
+    box-sizing: border-box;
+  }
 }

@@ -17,6 +17,7 @@
     <link  rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
     />
+    <script src="artistprofile.js"></script>
   </head>
   <body>
     <div class="desktop-7">
@@ -68,6 +69,9 @@
                         <img class="search-input-icon" src="search-svgrepo-com (1).svg"/>
                       </div>
                     </div>
+                    <div class="search-results">
+                      <ul class="results"></ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -79,7 +83,26 @@
                 </div>
                 <div class="image-25-parent">
                   <img class="image-25-icon" src="tylamain.png"/>
-                  <img class="vector-icon4" src="pause-stop-control-svgrepo-com.svg"/>
+                  
+                  <div class="vector-icon4" id="iconContainer">
+                    <svg id="pauseIcon" class="icon active" fill="#000000" width="50px" height="50px" viewBox="0 0 32 32" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Icon">
+                            <path d="M15.998,2c-7.727,0 -14,6.273 -14,14c-0,7.727 6.273,14 14,14c7.727,0 14,-6.273 14,-14c-0,-7.727 -6.273,-14 -14,-14Zm-0,2c6.623,0 12,5.377 12,12c-0,6.623 -5.377,12 -12,12c-6.623,0 -12,-5.377 -12,-12c-0,-6.623 5.377,-12 12,-12Z"/>
+                            <path d="M12,11l0,9.988c-0,0.552 0.448,1 1,1c0.552,-0 1,-0.448 1,-1l0,-9.988c-0,-0.552 -0.448,-1 -1,-1c-0.552,0 -1,0.448 -1,1Z"/>
+                            <path d="M18.006,11l0,9.988c0,0.552 0.448,1 1,1c0.552,-0 1,-0.448 1,-1l0,-9.988c0,-0.552 -0.448,-1 -1,-1c-0.552,-0 -1,0.448 -1,1Z"/>
+                        </g>
+                    </svg>
+                    <svg id="playIcon" class="icon" width="50px" height="50px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>circle-play</title>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="icon" fill="#000000" transform="translate(42.666667, 42.666667)">
+                                <path d="M213.333333,3.55271368e-14 C331.15408,3.55271368e-14 426.666667,95.5125867 426.666667,213.333333 C426.666667,331.15408 331.15408,426.666667 213.333333,426.666667 C95.5125867,426.666667 3.55271368e-14,331.15408 3.55271368e-14,213.333333 C3.55271368e-14,95.5125867 95.5125867,3.55271368e-14 213.333333,3.55271368e-14 Z M213.333333,42.6666667 C119.076736,42.6666667 42.6666667,119.076736 42.6666667,213.333333 C42.6666667,307.589931 119.076736,384 213.333333,384 C307.589931,384 384,307.589931 384,213.333333 C384,119.076736 307.589931,42.6666667 213.333333,42.6666667 Z M149.333333,128 L320,213.333333 L149.333333,298.666667 L149.333333,128 Z" id="Combined-Shape">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+
                   <img class="vector-icon5"src="loop-svgrepo-com.svg"/>
                   <img class="group-icon" src="add-ellipse-svgrepo-com.svg"/>
                 <img class="vector-icon6" src="shuffle-02-svgrepo-com.svg"/>
